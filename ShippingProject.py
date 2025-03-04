@@ -21,12 +21,12 @@ print("Ground Shipping premium $",cost_ground_premium)
 #Drone Shipping is dependent on the weight of the package and flat charge,
 
 if weight <= 2:
-  cost_ground = weight * 4.50 # weight*num1 + num2,  where weight*num1 is price per pound , num2 - flat charge
+  cost_drone = weight * 4.50 # weight*num1 + num2,  where weight*num1 is price per pound , num2 - flat charge
 elif weight <=6:
-  cost_ground = weight * 9.00
+  cost_drone = weight * 9.00
 elif weight <=10:
-  cost_ground = weight * 12.00
+  cost_drone = weight * 12.00
 else:
-  cost_ground = weight * 14.25 + 20
+  cost_drone = weight * 14.25 + 20
 
-print("Drone Shipping: $",cost_ground)
+print("Drone Shipping: $",cost_drone)
